@@ -1,0 +1,267 @@
+body {
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    font-weight: bold;
+    font-family: "sofia-pro", sans-serif;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+.header {
+    padding: 20px;
+    box-shadow: 0 0 10px #888888;
+}
+.nav {
+    text-align: right;
+}
+.nav a {
+    color: black;
+    padding: 0 10px;
+}
+.hero-image {
+    background-image: url('../images/heroimagev1.jpg');
+    background-size: cover;
+    padding: 32px;
+    height: 500px;
+    position: relative;
+}
+.hero-text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.material-symbols-outlined {  
+    font-variation-settings:  
+        'FILL' 1,  
+        'wght' 400,  
+        'GRAD' 0,  
+        'opsz' 24
+}
+.col-2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+.text-box{
+    max-width:1000px;
+    text-align: center;
+}
+.background{
+    background-color: #B92E1B;
+    padding: 50px;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+.round{
+    border-radius: 200px;
+    max-width: 100%;
+    height: auto;
+}
+h1{
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    text-align: center;
+}
+p{
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+}
+h3{
+    font-family: "sofia-pro", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+}
+.right{
+    text-align: right;
+}
+.left{
+    text-align: left;
+}
+.a1{
+    text-align: center;
+    color: #F7F1DE;
+}
+.button {
+    background-color: #B92E1B;
+    border-radius: 100px;
+    padding: 20px;
+    display: inline-block;
+}
+.menu{
+    background-color:#F7F1DE;
+    border-radius: 100px;
+    padding: 32px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.full-width{
+    width: 100%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.menu-images{
+    border-radius: 100px;
+    max-width: 100%;
+    height: auto;
+    padding: 10px;
+}
+.col-1{
+text-align: center;
+color: #B92E1B;
+}
+.col-3{
+    text-align: center;
+}
+.section1{
+    height: 100vh;
+    position: relative;
+}
+h3{
+    max-width: 450px;
+    text-align: center; 
+}
+.col-4{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+.pos-abs{
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translateY(-50%);
+    width: 100%;
+} 
+.aboutus{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    height: 300px;
+}
+.pos-abs-2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: translateY(50%);
+    width: 100%;
+} 
+.align-item-b{
+    align-items: end;
+}
+.mt0{
+    margin: 0;
+}
+.greenery{
+    background-image: url(../images/footer2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 80px;
+}
+.hours{
+    background-color: #22362E77;
+    border-radius: 60px;
+    max-width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    font-weight: bold;
+    padding: 20px;
+}
+.footer{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+.social{
+    display: flex;
+    align-items: center;
+}
+.logo2{
+    text-align: center;
+}
+button{
+    background-color: transparent;
+    color: black;
+    border: none;
+}
+@media screen and (max-width: 648px) {
+    .nav a{
+        display: none;
+    }
+    .text-box{
+        font-size: 30px;
+    }
+    .a1{
+        font-size: 12px;
+    }
+    .col-4{
+        grid-template-columns: 1fr;
+    }
+    .pos-abs{
+        position: relative;
+        transform: translateY(0%);
+    }
+    .pos-abs-2{
+        position: relative;
+        transform: translateY(0%);
+    }
+    .aboutus{
+        height: auto;
+        padding: 15px;
+    }
+    .background{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .col-1{
+        font-size: 35px
+    }
+    .col-2{
+        grid-template-columns: 1fr;
+    }
+    .greenery{
+        padding: 50px;
+    }
+    .footer{
+        grid-template-columns: auto;
+        padding: 15px;
+    }   
+    .social{
+        justify-content: center;
+    }
+}
+#mobile-nav{
+    background-color: #B92E1B;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999;
+}
+#mobile-nav a{
+    color: white;
+    display: block;
+    padding: 10px 20px
+}
